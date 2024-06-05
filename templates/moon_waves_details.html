@@ -1,0 +1,174 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="{% static 'image/varkala_logo.png' %}" type="image/png">
+        <title>Varkal Stays</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static '/vendors/linericon/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static '/vendors/owl-carousel/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static '/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css' %}">
+        <link rel="stylesheet" href="{% static '/vendors/nice-select/css/nice-select.css' %}">
+        <link rel="stylesheet" href="{% static '/vendors/owl-carousel/owl.carousel.min.css' %}">
+        <!-- main css -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    </head>
+    <body>
+        <!--================Header Area =================-->
+        <header class="header_area">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo_h" href="index.html"><img src="{% static 'image/varkala_logo.png' %}" alt="" class="logo-img"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="{%url 'index'%}">Home</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="{%url 'about'%}">About us</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="#">Accomodation</a></li> -->
+                            <li class="nav-item"><a class="nav-link" href="{%url 'gallery'%}">Gallery</a></li>
+                            <!-- <li class="nav-item submenu dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Blog Details</a></li>
+                                </ul>
+                            </li>  -->
+                            <li class="nav-item"><a class="nav-link" href="{%url 'property_list'%}">Propert List</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{%url 'contact'%}">Contact</a></li>
+                        </ul>
+                    </div> 
+                </nav>
+            </div>
+        </header>
+        <!--================Header Area =================-->
+        
+        <!--================Banner Area =================-->
+        <section class="banner_area blog_banner_moonwaves d_flex align-items-center">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h4>Moon Waves Beach Resort</h4>
+                    <!-- <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first</p> -->
+                    <!-- <a href="#" class="btn white_btn button_hover">View More</a> -->
+                </div>
+            </div>
+        </section>
+        <!--================Banner Area =================-->
+        
+        <!--================Blog Categorie Area =================-->
+        <section class="blog_categorie_area">
+                <div class="container-hotel-info">
+                    <div class="header">
+                        <h1>Moon Waves Beach Resort <span></span></h1>
+                        <p>Varkala Beach, Varkala | 2 minutes walk to Varkala Beach</p>
+                    </div>
+                    <br><br>
+                    <div class="gallery">
+                        <div class="main-image">
+                            <img src="{% static 'image/property_img/moon_waves_1.jpg' %}" alt="Main Pool">
+                            <!-- <p>228 PHOTOS & VIDEOS</p> -->
+                        </div>
+                        <div class="thumbnails">
+                            <img src="{% static 'image/property_img/moonwaves_room1.jpg' %}" alt="Video Thumbnail">
+                            <img src="{% static 'image/property_img/03.jpg' %}" alt="Room">
+                        </div>
+                    </div>
+                    <div class="hotel-name">
+                        <h2>Executive Villa King Room with Balcony</h2>
+                        <!-- <div class="button-element">
+                            <button class="view-other-rooms">View Other Rooms</button>
+                            <button class="book-now">Book This Now</button>
+                        </div> -->
+                        
+                        <p>For 2 Adults</p>
+                        <p>Room with Breakfast</p>
+                        <!-- <p class="price">₹ 8,086 <span class="old-price">₹ 8,086</span></p>
+                        <p>+ ₹ 1,455 taxes & fees</p>
+                        <p class="non-refundable">Non-Refundable</p>
+                        <button class="view-other-rooms">View Other Rooms</button>
+                        <button class="book-now">Book This Now</button> -->
+                    </div>
+                    <!-- <div class="book">
+                        <button class="view-other-rooms">View Other Rooms</button>
+                        <button class="book-now">Book This Now</button>
+                    </div>
+                        <p class="price">₹ 8,086 <span class="old-price">₹ 8,086</span></p>
+                        <p class="tax-price">+ ₹ 1,455 taxes & fees</p>
+                        <p class="non-refundable">Non-Refundable</p> -->
+                        <!-- <button class="view-other-rooms">View Other Rooms</button>
+                        <button class="book-now">Book This Now</button> -->
+                        <h1 class="Location">Location</h1>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.5034146987045!2d76.70071387406396!3d8.738612393468848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05eff37e3fdc63%3A0x314ecc176371deb1!2sMoon%20Waves%20Beach%20Resort!5e0!3m2!1sen!2sin!4v1717518212830!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <a href="https://maps.app.goo.gl/MfRNryQYAhjQmWvTA" target="_blank">
+                                <button class="view-map">View on Map</button>
+                            </a>             
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!--================Blog Area =================-->
+        
+        
+        <!--================ start footer Area  =================-->	
+        <footer class="footer-area section_gap">
+            <div class="container">
+                <div class="footer-row">
+                    <div class="col-lg-3  col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">About Agency</h6>
+                            <p class="footer-about">The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point </p>
+                        </div>
+                    </div>						
+                </div>
+                <div class="border_line"></div>
+                <div class="row footer-bottom d-flex justify-content-between align-items-center">
+                    <div class="footer-p">
+                        <p class="col-lg-8 col-sm-12 footer-text m-0">
+                            Copyright © 2022 Hudels Hospitality Services. All Rights Reserved.
+                            <br>
+                            Privacy & Policy | Terms and Conditions.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 footer-social">
+                        <!-- <a href="#"><i class="fa fa-facebook"  style="font-size: 30px;"></i></a> -->
+                        <a href="https://www.instagram.com/varkalastays4/"><i class="fa fa-instagram" style="font-size: 30px;"></i></a>
+                        <a href="https://wa.me/+919074582622"><i class="fa fa-whatsapp"  style="font-size: 30px;"></i></a>
+                    </div>
+                </div>
+            </div>
+>
+        </footer>
+
+		<!--================ End footer Area  =================-->
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+        <script src="{% static 'js/popper.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static '/vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+        <script src="{% static 'js/mail-script.js' %}"></script>
+        <script src="{% static '/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js' %}"></script>
+        <script src="{% static '/vendors/nice-select/js/jquery.nice-select.js' %}"></script>
+        <script src="{% static 'js/mail-script.js' %}"></script>
+        <script src="{% static 'js/stellar.js' %}"></script>
+        <script src="{% static '/vendors/lightbox/simpleLightbox.min.js' %}"></script>
+        <script src="{% static 'js/custom.js' %}"></script>
+    </body>
+</html>

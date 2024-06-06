@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="{% static '/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css' %}">
         <link rel="stylesheet" href="{% static '/vendors/nice-select/css/nice-select.css' %}">
         <link rel="stylesheet" href="{% static '/vendors/owl-carousel/owl.carousel.min.css' %}">
+        <!-- <link rel="stylesheet" href="{% static '/vendors/lightbox/simpleLightbox.css' %}"> -->
+
         <!-- main css -->
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
         <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
@@ -45,7 +47,7 @@
                                     <li class="nav-item"><a class="nav-link" href="#">Blog Details</a></li>
                                 </ul>
                             </li>  -->
-                            <li class="nav-item"><a class="nav-link" href="{%url 'property_list'%}">Property list</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{%url 'property_list'%}">property_list</a></li>
                             <li class="nav-item"><a class="nav-link" href="{%url 'contact'%}">Contact</a></li>
                         </ul>
                     </div> 
@@ -59,7 +61,7 @@
             <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
             <div class="container">
                 <div class="banner_content text-center">
-                    <h4>Ashokam Beach Resort</h4>
+                    <h4>Ashokam Beach Resort </h4>
                     <!-- <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first</p> -->
                     <!-- <a href="#" class="btn white_btn button_hover">View More</a> -->
                 </div>
@@ -71,56 +73,124 @@
         <section class="blog_categorie_area">
                 <div class="container-hotel-info">
                     <div class="header">
-                        <h1>Ashokam Beach Resort<span>  </span></h1>
-                        <p>Edava Beach, Varkala | 5.2 km from city centre</p>
+                        <h1>Ashokam Beach Resort  <span></span></h1>
+                        <p>Cavelossim, Goa | 2 minutes walk to Cavelossim Beach</p>
                     </div>
                     <br><br>
                     <div class="gallery">
-                        <div class="main-image">
-                            <img src="{% static 'image/property_img/ashokam_detail1.jpeg' %}" alt="Main Pool">
-                            <!-- <p>228 PHOTOS & VIDEOS</p> -->
+                        <div class="main-image main_gallery_item">
+                            <div class="main_gallery_img">
+                                <img src="{% static 'image/property_img/ashokam_detail1.jpeg ' %}" alt="">
+                                <div class="hover">
+                                    <a class="light" href="{% static 'image/property_img/ashokam_detail1.jpeg ' %}"><i class="fa fa-expand"></i></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="thumbnails">
-                            <img src="{% static 'image/property_img/ashokam_detail2.jpeg' %}" alt="Video Thumbnail">
-                            <img src="{% static 'image/property_img/ashokam_detail3.jpeg' %}" alt="Room">
+                            <img src="{% static 'image/gallery/01.jpg' %}" alt="Video Thumbnail">
+                            <img src="{% static 'image/gallery/03.jpg' %}" alt="Room">
                         </div>
                     </div>
                     <div class="hotel-name">
-                        <h2>Executive Villa King Room with Balcony</h2>
-                        <!-- <div class="button-element">
-                            <button class="view-other-rooms">View Other Rooms</button>
-                            <button class="book-now">Book This Now</button>
-                        </div> -->
-                        
-                        <!-- <p>For 2 Adults</p>
-                        <p>Room with Breakfast</p> -->
-                        <!-- <p class="price">₹ 8,086 <span class="old-price">₹ 8,086</span></p>
-                        <p>+ ₹ 1,455 taxes & fees</p>
-                        <p class="non-refundable">Non-Refundable</p>
-                        <button class="view-other-rooms">View Other Rooms</button>
-                        <button class="book-now">Book This Now</button> -->
+                        <h2>About</h2>
                     </div>
-                    <!-- <div class="book">
-                        <button class="view-other-rooms">View Other Rooms</button>
-                        <button class="book-now">Book This Now</button>
-                    </div>
-                        <p class="price">₹ 8,086 <span class="old-price">₹ 8,086</span></p>
-                        <p class="tax-price">+ ₹ 1,455 taxes & fees</p>
-                        <p class="non-refundable">Non-Refundable</p> -->
-                        <!-- <button class="view-other-rooms">View Other Rooms</button>
-                        <button class="book-now">Book This Now</button> -->
+                        <p class="tax-price">
+                            Escape to the arms of nature with Ashokam Resort Varkala, a sea-facing property amidst lush greenery with luxury accommodation and premium amenities. <br>
+                            The property is situated at a tranquil location heaving natural views all around. <br>
+                            A conference hall is available on-site for hosting corporate meetings. <br>
+                            Relax and unwind at the swimming pool available on-site. <br>
+                            The property provides a variety of Ayurveda packages to heal your body. <br>
+                        </p> <br>
+
+                        <span>Room Types</span><br>
+                        <div class="list_div">
+                            <li>NON AC sea view Standard Room  --  Room Only  &  Room with Breakfast available</li>
+                            <li>AC deluxe double room with garden view  --  Room with Breakfast</li>
+                            <li>AC sea view deluxe double room with balcony  --  Room Only & Room with Breakfast available</li>
+                            <li>Premium AC deluxe double room with balcony  --  Room Only & Room with Breakfast available</li>
+                            <li>AC sea view family room with balcony  --  --  Room Only & Room with Breakfast available</li>
+                        </div><br><br>
+                        <!-- <span>Property Rules</span><br> -->
+                        <div class="list_div">
+                            <h3>Property Rules</h3>
+                            <p>Check-in: 12 PM Check-out: 11 AM</p>
+                            <li>Guests below 18 years of age are not allowed at the property.</li>
+                            <li>Passport, Aadhar, Govt. ID and Driving License are accepted as ID proof(s)</li>
+                            <li>Pets are not allowed</li>
+                            <li>Outside food is not allowed</li>
+                        </div><br><br>
+
+
+                        <h1 class="Location">Hotel-images</h1>
+                        <div class="hotel-gallery" id="gallery">
+                            <div class="gallery_item">
+                                <div class="gallery_img">
+                                    <img src="{% static 'image/property_img/ashokam1.jpg' %}" alt="">
+                                    <div class="hover">
+                                        <a class="light" href="{% static 'image/property_img/ashokam1.jpg ' %}"><i class="fa fa-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery_item">
+                                <div class="gallery_img">
+                                    <img src="{% static 'image/property_img/ashokam5.jpg' %}" alt="">
+                                    <div class="hover">
+                                        <a class="light" href="{% static 'image/property_img/ashokam5.jpg ' %}"><i class="fa fa-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery_item">
+                                <div class="gallery_img">
+                                    <img src="{% static 'image/property_img/ashokam6.jpg' %}" alt="">
+                                    <div class="hover">
+                                        <a class="light" href="{% static 'image/property_img/ashokam6.jpg' %}"><i class="fa fa-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>        
+
+                        <div class="hotel-gallery" id="gallery">
+                            <div class="gallery_item">
+                                <div class="gallery_img">
+                                    <img src="{% static 'image/property_img/ashokam_inside1.jpeg' %}" alt="">
+                                    <div class="hover">
+                                        <a class="light" href="{% static 'image/property_img/villa3.jpg ' %}"><i class="fa fa-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery_item">
+                                <div class="gallery_img">
+                                    <img src="{% static 'image/property_img/ashokam_inside2.jpeg' %}" alt="">
+                                    <div class="hover">
+                                        <a class="light" href="{% static 'image/property_img/villa4.jpg ' %}"><i class="fa fa-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery_item">
+                                <div class="gallery_img">
+                                    <img src="{% static 'image/property_img/ashokam_inside3.jpeg' %}" alt="">
+                                    <div class="hover">
+                                        <a class="light" href="{% static 'image/property_img/ashokam_inside3.jpg' %}"><i class="fa fa-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                         <h1 class="Location">Location</h1>
                         <div class="map">
+                            <!-- ashokam  -->
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.2903978387726!2d76.68568977406414!3d8.758724293163029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05efe493a68c75%3A0xd31b1c6d46bf2bf6!2sAshokam%20Resort%20Varkala!5e0!3m2!1sen!2sin!4v1717517064128!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             <a href="https://maps.app.goo.gl/VSV9KoBhmHkS3iiq8" target="_blank">
                                 <button class="view-map">View on Map</button>
-                            </a>             
+                            </a>              
                         </div>
                     </div>
                 </div>
         </section>
 
-        <!--================Blog-Area =================-->
+        <!--================Blog Area =================-->
         
         
         <!--================ start footer Area  =================-->	
@@ -145,12 +215,12 @@
                     </div>
                     <div class="col-lg-4 col-sm-12 footer-social">
                         <!-- <a href="#"><i class="fa fa-facebook"  style="font-size: 30px;"></i></a> -->
-                        <a href="https://www.instagram.com/varkalastays4/"><i class="fa fa-instagram" style="font-size: 30px;"></i></a>
-                        <a href="https://wa.me/+919074582622"><i class="fa fa-whatsapp"  style="font-size: 30px;"></i></a>
+                        <a href="#"><i class="fa fa-instagram" style="font-size: 30px;"></i></a>
+                        <a href="#"><i class="fa fa-whatsapp"  style="font-size: 30px;"></i></a>
                     </div>
                 </div>
             </div>
->
+
         </footer>
 
 		<!--================ End footer Area  =================-->
@@ -170,5 +240,10 @@
         <script src="{% static 'js/stellar.js' %}"></script>
         <script src="{% static '/vendors/lightbox/simpleLightbox.min.js' %}"></script>
         <script src="{% static 'js/custom.js' %}"></script>
+
+        <script src="{% static '/vendors/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+        <script src="{% static '/vendors/isotope/isotope-min.js' %}"></script>
+
+
     </body>
 </html>

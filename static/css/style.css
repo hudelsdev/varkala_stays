@@ -890,7 +890,7 @@ button:focus {
   overflow: hidden;
 }
 
-
+ana
 .blog_banner_skyframe .banner_content {
   margin-bottom: 0px;
   margin-top: 106px;
@@ -4285,13 +4285,7 @@ img.logo-img {
   border-style: none;
   height: 80px;
 }
-.details_info{
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  padding-top: 5px;
 
-}
 /* .call_now_btn{
   background-color: #4496f5d9;
   border: none;
@@ -4515,6 +4509,13 @@ span {
     border-radius: 5px;
     cursor: pointer;
     }
+    .details_info {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding-top: 5px;
+      flex-direction: column;
+  }
   .hotel-card {
     background-color: white;
     border: 1px solid #ddd;
@@ -4546,6 +4547,22 @@ span {
     font-family: system-ui;
     font-weight: bold;
   }
+  .share-buttons {
+    display: flex;
+    gap: 10px;
+}
+.share-buttons a {
+  text-decoration: none;
+  padding: 5px 5px;
+  color: white;
+  border-radius: 5px;
+  width: fit-content;
+  height: 35px;
+  font-size: 10px;
+  display: flex;
+}
+.facebook { background-color: #3b5998; }
+.whatsapp { background-color: #25d366; }
   .style-rating-score {
     font-size: 15px;
     font-weight: bold;
@@ -5048,6 +5065,31 @@ button.view-map {
     height: 280px;
     cursor: pointer;
   }
+  .details_info{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding-top: 5px;
+  
+  }
+  .share-buttons {
+    display: flex;
+    gap: 10px;
+    padding-right: 260px;
+}
+.share-buttons a {
+    text-decoration: none;
+    padding: 5px 12px;
+    color: white;
+    border-radius: 5px;
+    width: 114px;
+    height: 35px;
+    font-size: 10px;
+    display: flex;
+}
+
+.facebook { background-color: #3b5998; }
+.whatsapp { background-color: #25d366; }
   .hotel-hover {
     transition: box-shadow 0.3s ease-in-out;
   }

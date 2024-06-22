@@ -58,11 +58,11 @@
         <section class="banner_area blog_banner_cliff d_flex align-items-center">
             <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
             <div class="container">
+
                 <div class="banner_content text-center">
                     <h4>Cliff County Varkala</h4>
-                    <!-- <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first</p> -->
-                    <!-- <a href="#" class="btn white_btn button_hover">View More</a> -->
                 </div>
+
             </div>
         </section>
         <!--================Banner Area =================-->
@@ -89,10 +89,10 @@
                     <h2>About</h2>
                     </div>
                     <p class="tax-price">
-                        Cliff County is a sustainable homestay in Varkala, a 2-minute walk from Varkala Beach. This property encourages guests to <br> embrace nature with its eco-friendly arrangements. This homestay features free private parking, a 24-hour front desk, and free Wifi. <br> The accommodation provides airport transfers, while a bicycle rental service is also available. Each room has a private bathroom with a shower and free toiletries, <br> while some rooms include a balcony.A car rental service is available at Cliff County. Popular points of interest near the accommodation include <br> Odayam Beach, Aaliyirakkm Beach, and Varkala Cliff,Black Sand Beach, Kappil Beach. The nearest airport is Thiruvananthapuram International Airport, 25 miles from Cliff County.
+                        Cliff County is a sustainable homestay in Varkala, a 3-minute walk from Varkala Beach. This property encourages guests to <br> embrace nature with its eco-friendly arrangements. This homestay features free private parking, a 24-hour front desk, and free Wifi. <br> The accommodation provides airport transfers, while a bicycle rental service is also available. Each room has a private bathroom with a shower and free toiletries, <br> while some rooms include a balcony.A car rental service is available at Cliff County. Popular points of interest near the accommodation include <br> Odayam Beach, Aaliyirakkm Beach, and Varkala Cliff,Black Sand Beach, Kappil Beach. The nearest airport is Thiruvananthapuram International Airport, 25 miles from Cliff County.
                     </p> <br>
 
-                    <span>Room Types</span><br>
+                    <span class="txt_roomtype">Room Types</span><br>
                         <div class="list_div">
                             <li>Standard NON AC  --  Room Only</li>
                             <li>deluxe double AC  --  Room Only</li>
@@ -105,14 +105,47 @@
                     <li>Pets are not allowed.</li>
                     
                 </div><br><br>
+                <div class="room_main">
+                    <!--hotel-room 1-->
 
+                        <div class="room_card">
+                            <img src="{% static 'image/property_img/cliff_a-c deluxe room.jpg' %}" alt="Swimming pool" class="room_card-image">
+                            <div class="room_card-content">
+                                <h2>Deluxe AC Room - with Balcony </h2>
+                                <ul class="room_details">
+                                    <li><img src="{% static 'image/property_img/bed-alt.png' %}" alt="" style="height: 20px; width: 20px;"> Double Bed</li>
+                                    <!-- <li><img src="{% static 'image/property_img/trillium.png' %}" alt="" style="height: 20px; width: 20px;"> Garden View  </li> -->
+                                    <li><img src="{% static 'image/property_img/Desk.png' %}" alt="" style="height: 20px; width: 20px;"> Work Desk </li>
+                                    <li><img src="{% static 'image/property_img/wifi.png' %}" alt="" style="height: 20px; width: 20px;"> Wi-Fi </li>
+                                    <li><img src="{% static 'image/property_img/water-bottle.png' %}" alt="" style="height: 20px; width: 20px;"> Complimentar water bottle </li>
+                                    <!-- <li><img src="{% static 'image/icon_png/ban.png' %}" alt="" style="height: 20px; width: 20px;"> Non-Refundable</li> -->
+                                </ul>
+                            </div>
+                        </div> 
+                        
+                    <!--hotel-room-2-->
+
+                        <div class="room_card">
+                            <img src="{% static 'image/property_img/cliff non a-c.jpg' %}" alt="Swimming pool" class="room_card-image">
+                            <div class="room_card-content">
+                                <h2>Standard Non AC Room</h2>
+                                <ul class="room_details">
+                                    <li><img src="{% static 'image/property_img/bed-alt.png' %}" alt="" style="height: 20px; width: 20px;">  Twin Bed </li>
+                                    <!-- <li><img src="{% static 'image/property_img/wave.png' %}" alt="" style="height: 20px; width: 20px;"> Sea View </li> -->
+                                    <li><img src="{% static 'image/property_img/Desk.png' %}" alt="" style="height: 20px; width: 20px;"> Work Desk </li>
+                                    <li><img src="{% static 'image/property_img/wifi.png' %}" alt="" style="height: 20px; width: 20px;"> Wi-Fi </li>
+                                    <li><img src="{% static 'image/property_img/water-bottle.png' %}" alt="" style="height: 20px; width: 20px;"> Complimentar water bottle </li>
+                                </ul>
+                            </div>
+                        </div> 
+                </div>
                 <h1 class="Location">Hotel-images</h1>
                 <div class="hotel-gallery" id="gallery">
                     <div class="gallery_item">
                         <div class="gallery_img">
                             <img src="{% static 'image/property_img/cliffcnty_1.jpeg' %}" alt="">
                             <div class="hover">
-                                <a class="light" href="{% static 'image/property_img/cliffcnty_1.jpeg' %}"><i class="fa fa-expand"></i></a>
+                                <a class="light" href="{% static 'image/property_img/cliffcnty_1.jpeg ' %}"><i class="fa fa-expand"></i></a>
                             </div>
                         </div>
                     </div>
@@ -120,7 +153,7 @@
                         <div class="gallery_img">
                             <img src="{% static 'image/property_img/cliffcounty-dtls.jpeg' %}" alt="">
                             <div class="hover">
-                                <a class="light" href="{% static 'image/property_img/cliffcounty-dtls.jpeg' %}"><i class="fa fa-expand"></i></a>
+                                <a class="light" href="{% static 'image/property_img/cliffcounty-dtls.jpeg ' %}"><i class="fa fa-expand"></i></a>
                             </div>
                         </div>
                     </div>

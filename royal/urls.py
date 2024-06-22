@@ -7,17 +7,12 @@ urlpatterns =[
     path('gallery/',varkala_gallery,name='gallery'),
     path('property_list/',varkala_list,name='property_list'),
     path('contact/',varkala_contact,name='contact'),
+    path('enquiry/',send_enquiry_email,name='enquiry'),
+    path('enquirysuccess/',enquirysuccess,name='enquirysuccess'),
 
-    #modifiy on 23/05/2024 -- chandru 
-    # path('ashokam/',ashokam_details,name='ashokam_details'),
-
-    # modifiy on 21/05/2024 -- chandru 
-
-    # path('accomodation/',varkala_accomodation,name='accomodation'),
-    # path('blog-single/',varkala_blog_single,name='blog-single'),
+   
     
     
-    # modifiy on 21/05/2024 -- chandru 
     path('ashokam/',ashokam_details,name='ashokam_details'),
     path('cliffcounty/',cliffcounty_details,name='cliffcounty_details'),
     path('evebeach/',eva_beach_details,name='evebeach_details'),

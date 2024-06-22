@@ -1,7 +1,6 @@
 from django.shortcuts import render,redirect
 from django.core.mail import send_mail
 from django.http import HttpResponse
-from django.views.decorators.csrf import csrf_exempt
 import logging
 
 logger = logging.getLogger(__name__)
@@ -24,7 +23,6 @@ def enquirysuccess(request):
     return render(request, "success.html")
 
 
-@csrf_exempt
 def send_enquiry_email(request):
     if request.method == 'POST':
         check_in = request.POST.get('check_in')

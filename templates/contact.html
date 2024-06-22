@@ -97,7 +97,8 @@
                             <div class="info_item">
                                 <i class="lnr lnr-phone-handset"></i>
                                 <h6><a href="tel:">+91-8069640311</a></h6>
-                                <h6><a href="tel:">+91-7306141453</a></h6>
+                                -----------------------
+                                <h6><a href="tel:">+91-8069640311</a></h6>
                                 <p>Mon to Sat 11 am to 10 pm</p>
                             </div>
                             <div class="info_item">
@@ -108,25 +109,34 @@
                         </div>
                     </div>
                     <div class="col-md-9">
-                        <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                        <form method="post" action="/enquiry/" class="row contact_form">
+                            {% csrf_token %}
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                                    <label for="check_in">Check-In Date:</label>
+                                    <input type="date" class="form-control" name="check_in" id="check_in" required >
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+                                    <label for="check_out">Check-Out Date:</label>
+                                    <input type="date" class="form-control" name="check_out" id="check_out" required >
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+                                    <label for="name">Your Name:</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
+                                    <label for="contact_number">Contact Number:</label>
+                                    <input type="tel" class="form-control" id="contact_number" name="contact_number" placeholder="Enter Phone No.">
+                                </div>
+                                <div class="form-group">
+                                    <label for="num_people">Number of People:</label>
+                                    <input type="number" class="form-control" id="num_people" name="num_people" min="1" required placeholder="Enter No. of People">
                                 </div>
                             </div>
                             <div class="col-md-12 text-right">
-                                <button type="submit" value="submit" class="btn theme_btn button_hover">Send Message</button>
+                                <button type="submit" class="btn theme_btn button_hover">Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -184,7 +194,7 @@
        
        
        <!--================Contact Success and Error message Area =================-->
-        <div id="success" class="modal modal-message fade" role="dialog">
+        <!-- <div id="success" class="modal modal-message fade" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -196,11 +206,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- Modals error -->
 
-        <div id="error" class="modal modal-message fade" role="dialog">
+        <!-- <div id="error" class="modal modal-message fade" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -212,7 +222,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!--================End Contact Success and Error message Area =================-->
 
         

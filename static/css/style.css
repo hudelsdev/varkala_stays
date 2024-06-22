@@ -4353,6 +4353,10 @@ img.logo-img {
   .list_div li{
     padding: 4px;
   }
+  h4.txt_cnct {
+    padding: 7px 14px;
+    display: none;
+  }
   }
 
 
@@ -4371,7 +4375,10 @@ img.logo-img {
     height: 100%;
     width: fit-content;
   }
-  
+  h4.txt_cnct {
+    padding: 7px 14px;
+    color: black;
+}
   
   .gallery_img.hotel_image {
     width: fit-content;

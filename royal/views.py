@@ -40,7 +40,7 @@ def send_enquiry_email(request):
                     f'Check-in date: {check_in}\nCheck-out date: {check_out}\n'
                     f'Name: {name}\nContact number: {contact_number}\nNumber of people: {num_people}',
                     None,  
-                    ['ajaisvraj7907@gmail.com'],
+                    ['varkalastays@gmail.com'],
                     fail_silently=False,
                 )
                 print("Email sent successfully")

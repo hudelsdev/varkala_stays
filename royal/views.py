@@ -1,6 +1,12 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
+from django.core.mail import send_mail
+from django.http import HttpResponse
+import logging
+
+logger = logging.getLogger(__name__)
 
 # Create your views here.
+
 def varkala_index(request):
     return render(request, "index.html")
 
@@ -13,15 +19,48 @@ def varkala_gallery(request):
 def varkala_contact(request):
     return render(request, "contact.html")
 
-#   # modifiy on 04/06/2024 -- chandru 
+def enquirysuccess(request):
+    return render(request, "success.html")
 
 
+def send_enquiry_email(request):
+    if request.method == 'POST':
+        check_in = request.POST.get('check_in')
+        check_out = request.POST.get('check_out')
+        name = request.POST.get('name')
+        contact_number = request.POST.get('contact_number')
+        num_people = request.POST.get('num_people')
+        
+        print("Received data:", check_in, check_out, name, contact_number, num_people)
+        
+        if check_in and check_out and name and contact_number and num_people:
+            try:
+                send_mail(
+                    'New Enquiry',
+                    f'Check-in date: {check_in}\nCheck-out date: {check_out}\n'
+                    f'Name: {name}\nContact number: {contact_number}\nNumber of people: {num_people}',
+                    None,  
+                    ['sales@hudels.com'],
+                    fail_silently=False,
+                )
+                print("Email sent successfully")
+                return redirect('enquirysuccess')
+            except Exception as e: 
+                logger.error(f"Error sending email: {e}")
+                return HttpResponse(f"Error sending email: {e}", status=500)
+        else:
+            return HttpResponse("All fields are required", status=400)
+
+    return render(request, 'contact.html')
+
+# modifiy on 04/06/2024 -- 
+
+#hotels list
 def varkala_list(request):
     return render(request, "property_list.html")
 
-#hotels list
 
-
+#hotel details
 def ashokam_details(request):
     return render(request, "ashokam_details.html")
 
@@ -42,16 +81,6 @@ def moon_waves_details(request):
 
 def villa_skyframe_details(request):
     return render(request, "villa_skyframe_details.html")
-
+ 
 def cliffcounty_details(request):
     return render(request, "cliffcounty_details.html")
-# modifiy on 21/05/2024 -- chandru 
-
-# def varkala_accomodation(request):
-#     return render(request, "accomodation.html")
-
-# def varkala_blog(request):
-#     return render(request, "blog.html")
-
-# def varkala_blog_single(request):
-#     return render(request, "blog-single.html")

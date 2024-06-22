@@ -35,7 +35,7 @@ ALLOWED_HOSTS = []
 CSRF_TRUSTED_ORIGINS = [
     'https://varkalastays.com',
     'https://www.varkalastays.com',  
-
+]
 # Application definition
 
 INSTALLED_APPS = [

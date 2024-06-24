@@ -4314,14 +4314,15 @@ img.logo-img {
 
 
 @media (max-width:768px){
-.list_div {
-  padding-left: 5px;
-  color: black;
-  font-family: 'circular';
-  font-weight: 700;
-  width: fit-content;
-  text-align: center;
-}
+    .list_div {
+    color: black;
+    font-family: 'circular';
+    font-weight: 700;
+    width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    }
 .list_div li{
   padding: 4px;
 }

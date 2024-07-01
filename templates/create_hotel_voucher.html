@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Hotel Voucher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 50px; 
+            min-height: 100vh; 
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            margin-bottom: 50px; 
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            width: calc(100% - 22px); 
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        button {
+            padding: 15px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <div class="container">
+            <h1>Create Hotel Voucher</h1>
+            <form method="post" action="{% url 'create_hotel_voucher' %}">
+                {% csrf_token %}
+                <label for="booking_reference">Booking Reference:</label>
+                <input type="text" id="booking_reference" name="booking_reference" value="{{ request.GET.booking_reference }}" readonly><br>
+                
+                <label for="booking_status">Booking Status:</label>
+                <input type="text" id="booking_status" name="booking_status"><br>
+                
+                <label for="payment_status">Payment Status:</label>
+                <input type="text" id="payment_status" name="payment_status"><br>
+                
+                <label for="customer_name">Customer Name:</label>
+                <input type="text" id="customer_name" name="customer_name"><br>
+                
+                <label for="room_type">Room Type:</label>
+                <input type="text" id="room_type" name="room_type"><br>
+                
+                <label for="number_of_nights">Number of Nights:</label>
+                <input type="number" id="number_of_nights" name="number_of_nights"><br>
+                
+                <label for="number_of_rooms">Number of Rooms:</label>
+                <input type="number" id="number_of_rooms" name="number_of_rooms"><br>
+                
+                <label for="adults">Adults:</label>
+                <input type="number" id="adults" name="adults"><br>
+                
+                <label for="children">Children:</label>
+                <input type="number" id="children" name="children"><br>
+                
+                <label for="customer_contact_number">Customer Contact Number:</label>
+                <input type="tel" id="customer_contact_number" name="customer_contact_number"><br>
+                
+                <label for="meal_plan">Meal Plan:</label>
+                <input type="text" id="meal_plan" name="meal_plan"><br>
+                
+                <label for="arrival_details">Arrival Details:</label>
+                <input type="text" id="arrival_details" name="arrival_details"><br>
+                
+                <label for="total_booking_amount">Total Booking Amount:</label>
+                <input type="number" step="0.01" id="total_booking_amount" name="total_booking_amount"><br>
+                
+                <label for="commission_amount">Commission Amount:</label>
+                <input type="number" step="0.01" id="commission_amount" name="commission_amount"><br>
+                
+                <label for="net_hotel_amount">Net Hotel Amount:</label>
+                <input type="number" step="0.01" id="net_hotel_amount" name="net_hotel_amount"><br>
+                
+                <label for="check_in_date">Check-In Date:</label>
+                <input type="datetime-local" id="check_in_date" name="check_in_date"><br>
+                
+                <label for="check_out_date">Check-Out Date:</label>
+                <input type="datetime-local" id="check_out_date" name="check_out_date"><br>
+
+                <label for="amount_collected_from_customer">Amount Collected From Customer:</label>
+                <input type="number" id="amount_collected_from_customer" name="amount_collected_from_customer"></input><br>
+
+                <label for="balance_to_collect">Balance To Collect:</label>
+                <input type="number" id="balance_to_collect" name="balance_to_collect"></input><br>
+
+                <label for="remarks">Remarks:</label>
+                <textarea id="remarks" name="remarks"></textarea><br>
+                
+                <button type="submit">Create Voucher</button>
+            </form>
+        </div>
+        <br><br><br>
+        <div class="container">
+            <h1>Create Customer Voucher</h1>
+            <form method="post" action="{% url 'create_customer_voucher' %}">
+                {% csrf_token %}
+                <label for="booking_reference">Booking Reference:</label>
+                <input type="text" id="booking_reference" name="booking_reference" value="{{ request.GET.booking_reference }}" readonly><br>
+                
+                <label for="booking_status">Booking Status:</label>
+                <input type="text" id="booking_status" name="booking_status"><br>
+                
+                <label for="payment_status">Payment Status:</label>
+                <input type="text" id="payment_status" name="payment_status"><br>
+                
+                <label for="customer_name">Customer Name:</label>
+                <input type="text" id="customer_name" name="customer_name"><br>
+                
+                <label for="hotel_name">Hotel Name:</label>
+                <input type="text" id="hotel_name" name="hotel_name"><br>
+                
+                <label for="room_type">Room Type:</label>
+                <input type="text" id="room_type" name="room_type"><br>
+                
+                <label for="number_of_nights">Number of Nights:</label>
+                <input type="number" id="number_of_nights" name="number_of_nights"><br>
+                
+                <label for="number_of_rooms">Number of Rooms:</label>
+                <input type="number" id="number_of_rooms" name="number_of_rooms"><br>
+                
+                <label for="adults">Adults:</label>
+                <input type="number" id="adults" name="adults"><br>
+                
+                <label for="children">Children:</label>
+                <input type="number" id="children" name="children"><br>
+                
+                <label for="hotel_contact_number">Hotel Contact Number:</label>
+                <input type="tel" id="hotel_contact_number" name="hotel_contact_number"><br>
+                
+                <label for="meal_plan">Meal Plan:</label>
+                <input type="text" id="meal_plan" name="meal_plan"><br>
+                
+                <label for="arrival_details">Arrival Details:</label>
+                <input type="text" id="arrival_details" name="arrival_details"><br>
+                
+                <label for="total_booking_amount">Total Booking Amount:</label>
+                <input type="number" step="0.01" id="total_booking_amount" name="total_booking_amount"><br>
+                
+                <label for="advance_amount">Advance Amount:</label>
+                <input type="number" step="0.01" id="advance_amount" name="advance_amount"><br>
+                
+                <label for="balance_payable">Balance Payable:</label>
+                <input type="number" step="0.01" id="balance_payable" name="balance_payable"><br>
+                
+                <label for="check_in_time">Check-In Time:</label>
+                <input type="time" id="check_in_time" name="check_in_time"><br>
+                
+                <label for="check_out_time">Check-Out Time:</label>
+                <input type="time" id="check_out_time" name="check_out_time"><br>
+
+                <label for="check_in_date">Check-In Date:</label>
+                <input type="datetime-local" id="check_in_date" name="check_in_date"><br>
+                
+                <label for="check_out_date">Check-Out Date:</label>
+                <input type="datetime-local" id="check_out_date" name="check_out_date"><br>
+                
+                <label for="remarks">Remarks:</label>
+                <textarea id="remarks" name="remarks"></textarea><br>
+                
+                <button type="submit">Create Voucher</button>
+            </form>
+        </div>
+    </div>
+   
+</body>
+</html>

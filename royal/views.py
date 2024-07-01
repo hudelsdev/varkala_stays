@@ -228,7 +228,7 @@ def create_customer_voucher_pdf(response, voucher_data):
     
     
     # logo
-    logo_path = os.path.join(settings.BASE_DIR, 'static/varkala_logo.png')
+    logo_path = os.path.join(settings.BASE_DIR, 'static/image/varkala_logo.png')
     if os.path.exists(logo_path):
         p.drawImage(logo_path, 40, height - 100, width=120, preserveAspectRatio=True, mask='auto')
 
@@ -322,7 +322,7 @@ def create_customer_voucher_pdf(response, voucher_data):
     p.setFillColor(colors.white)
     p.rect(confirmation_box_x, confirmation_box_y, 270, 50, fill=1)
 
-    tick_mark_path = os.path.join(settings.BASE_DIR, 'static/image001.png')
+    tick_mark_path = os.path.join(settings.BASE_DIR, 'static/image/image001.png')
     if os.path.exists(tick_mark_path):
         p.drawImage(tick_mark_path, confirmation_box_x + 10, confirmation_box_y + 0, width=50, height=50, mask='auto')
 
@@ -362,7 +362,7 @@ def create_hotel_voucher_pdf(response, voucher_data):
     
     
     # logo
-    logo_path = os.path.join(settings.BASE_DIR, 'static/varkala_logo.png')
+    logo_path = os.path.join(settings.BASE_DIR, 'static/image/varkala_logo.png')
     if os.path.exists(logo_path):
         p.drawImage(logo_path, 40, height - 100, width=120, preserveAspectRatio=True, mask='auto')
         
@@ -455,7 +455,7 @@ def create_hotel_voucher_pdf(response, voucher_data):
     p.setFillColor(colors.white)
     p.rect(confirmation_box_x, confirmation_box_y, 250, 50, fill=1)
 
-    tick_mark_path = os.path.join(settings.BASE_DIR, 'static/image001.png')
+    tick_mark_path = os.path.join(settings.BASE_DIR, 'static/image/image001.png')
     if os.path.exists(tick_mark_path):
         p.drawImage(tick_mark_path, confirmation_box_x + 10, confirmation_box_y + 0, width=50, height=50, mask='auto')
 

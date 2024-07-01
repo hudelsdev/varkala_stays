@@ -20,14 +20,19 @@ logger = logging.getLogger(__name__)
 def varkala_index(request):
     return render(request, "index.html")
 
+
 def varkala_about(request):
     return render(request, "about.html")
+
 
 def varkala_gallery(request):
     return render(request, "gallery.html")
 
+
 def varkala_contact(request):
     return render(request, "contact.html")
+
+
 
 def enquirysuccess(request):
     return render(request, "success.html")
@@ -38,7 +43,7 @@ def send_enquiry_email(request):
         check_in = request.POST.get('check_in')
         check_out = request.POST.get('check_out')
         name = request.POST.get('name')
-        contact_number = request.POST.get('contact_number')
+        contact_number = request.POST.get('contact_number') 
         num_people = request.POST.get('num_people')
         
         print("Received data:", check_in, check_out, name, contact_number, num_people)
@@ -50,10 +55,11 @@ def send_enquiry_email(request):
                     f'Check-in date: {check_in}\nCheck-out date: {check_out}\n'
                     f'Name: {name}\nContact number: {contact_number}\nNumber of people: {num_people}',
                     None,  
-                    ['varkalastays@gmail.com'],
+                    ['sales@hudels.com'],
                     fail_silently=False,
                 )
                 print("Email sent successfully")
+                
                 return redirect('enquirysuccess')
             except Exception as e: 
                 logger.error(f"Error sending email: {e}")
@@ -63,7 +69,6 @@ def send_enquiry_email(request):
 
     return render(request, 'contact.html')
 
-# modifiy on 04/06/2024 -- 
 
 #hotels list
 def varkala_list(request):
@@ -74,26 +79,34 @@ def varkala_list(request):
 def ashokam_details(request):
     return render(request, "ashokam_details.html")
 
+
 def eva_beach_details(request):
     return render(request, "evabeach_details.html")
+
 
 def haiwa_details(request):
     return render(request, "haiwa_details.html")
 
+
 def skyframe_details(request):
     return render(request, "skyframe_details.html")
+
 
 def nisara_details(request):
     return render(request, "nisara_details.html")
 
+
 def moon_waves_details(request):
     return render(request, "moon_waves_details.html")
+
 
 def villa_skyframe_details(request):
     return render(request, "villa_skyframe_details.html")
  
+ 
 def cliffcounty_details(request):
     return render(request, "cliffcounty_details.html")
+
 
 
 # voucher cretions views 
@@ -230,7 +243,13 @@ def create_customer_voucher_pdf(response, voucher_data):
     # logo
     logo_path = os.path.join(settings.BASE_DIR, 'static/image/varkala_logo.png')
     if os.path.exists(logo_path):
-        p.drawImage(logo_path, 40, height - 100, width=120, preserveAspectRatio=True, mask='auto')
+        p.drawImage(logo_path, 40, height - 180, width=50, preserveAspectRatio=True, mask='auto')
+    else:
+        print(f"Logo not found at {logo_path}")
+        p.setFillColor(colors.red)
+        p.setFont("Helvetica-Bold", 12)
+        p.drawString(40, height - 100, "Logo not found")
+
 
     #  styles
     p.setFont("Helvetica-Bold", 16)
@@ -254,22 +273,7 @@ def create_customer_voucher_pdf(response, voucher_data):
     y = height - 550
     
     
-# Separate the remarks into a box
 
-    remarks = voucher_data.get('remarks', '')
-    if remarks:
-        remarks_box_x = 40
-        remarks_box_y = y - 60  
-        remarks_box_width = width - 80
-        remarks_box_height = 50  
-        
-        p.setFillColor(colors.white)
-        p.rect(remarks_box_x, remarks_box_y, remarks_box_width, remarks_box_height, fill=1)
-        p.setFillColor(colors.black)
-        p.setFont("Helvetica", 12)
-        p.drawString(remarks_box_x + 10, remarks_box_y + 30, "Remarks:")
-        p.setFont("Helvetica", 10)
-        p.drawString(remarks_box_x + 10, remarks_box_y + 10, remarks)
         
     #  data for the table
     
@@ -293,7 +297,7 @@ def create_customer_voucher_pdf(response, voucher_data):
             ["CHECK-OUT DATE", voucher_data.get('check_out_date')],
             ["CHECK-IN TIME", voucher_data.get('check_in_time')],
             ["CHECK-OUT TIME", voucher_data.get('check_out_time')],
-            ["REMARKS", voucher_data.get('remarks')]]
+            ]
 
     # Create table
     col_widths = [155, width - 225]
@@ -307,8 +311,24 @@ def create_customer_voucher_pdf(response, voucher_data):
         ('BACKGROUND', (0, 1), (-1, -1), colors.white),
         ('GRID', (0, 0), (-1, -1), 1, colors.black),
     ]))
+    
+    
+    # Separate the remarks into a box
 
-
+    remarks = voucher_data.get('remarks', '')
+    if remarks:
+        remarks_box_x = 40
+        remarks_box_y = y - 60  
+        remarks_box_width = width - 80
+        remarks_box_height = 50  
+        
+        p.setFillColor(colors.white)
+        p.rect(remarks_box_x, remarks_box_y, remarks_box_width, remarks_box_height, fill=1)
+        p.setFillColor(colors.black)
+        p.setFont("Helvetica", 12)
+        p.drawString(remarks_box_x + 10, remarks_box_y + 30, "Remarks:")
+        p.setFont("Helvetica", 10)
+        p.drawString(remarks_box_x + 10, remarks_box_y + 10, remarks)
 
     #  table on the PDF
     table.wrapOn(p, width, height)
@@ -364,7 +384,12 @@ def create_hotel_voucher_pdf(response, voucher_data):
     # logo
     logo_path = os.path.join(settings.BASE_DIR, 'static/image/varkala_logo.png')
     if os.path.exists(logo_path):
-        p.drawImage(logo_path, 40, height - 100, width=120, preserveAspectRatio=True, mask='auto')
+        p.drawImage(logo_path, 40, height - 180, width=50, preserveAspectRatio=True, mask='auto')
+    else:
+        print(f"Logo not found at {logo_path}")
+        p.setFillColor(colors.red)
+        p.setFont("Helvetica-Bold", 12)
+        p.drawString(40, height - 100, "Logo not found")
         
         
     #  styles
@@ -476,6 +501,9 @@ def create_hotel_voucher_pdf(response, voucher_data):
     for line in contact_text.split("\n"):
         p.drawString(text_x, text_y, line)
         text_y -= 15
+        
+    
+
     
     
     p.showPage()

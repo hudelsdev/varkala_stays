@@ -1,0 +1,59 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voucher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            margin-bottom: 30px;
+            width: 150px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create Voucher</h1>
+    <div class="button-container">
+        <img src="{% static 'varkala_logo.png' %}" alt="logo" class="logo">
+        <a href="{% url 'create_hotel_voucher' %}?booking_reference={{ booking_reference }}">Create Voucher</a>
+    </div>
+</body>
+</html>

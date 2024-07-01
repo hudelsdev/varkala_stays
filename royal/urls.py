@@ -10,8 +10,6 @@ urlpatterns =[
     path('enquiry/',send_enquiry_email,name='enquiry'),
     path('enquirysuccess/',enquirysuccess,name='enquirysuccess'),
 
-   
-    
     
     path('ashokam/',ashokam_details,name='ashokam_details'),
     path('cliffcounty/',cliffcounty_details,name='cliffcounty_details'),
@@ -21,5 +19,12 @@ urlpatterns =[
     path('nisara/',nisara_details,name='nisara_details'),
     path('moon_waves/',moon_waves_details,name='moon_waves_details'),
     path('villa_skyframe/',villa_skyframe_details,name='villa_skyframe_details'),
-
+    
+        # voucher creations urls
+    
+    path('voucher_create_index', voucher_create_index, name='voucher_create_index'),
+    path('create_customer_voucher/', create_customer_voucher, name='create_customer_voucher'),
+    path('create_hotel_voucher/', create_hotel_voucher, name='create_hotel_voucher'),
+    path('success/', voucher_success, name='voucher_success'),
+    path('download/<str:voucher_type>/', download_voucher, name='download_voucher'),
 ]

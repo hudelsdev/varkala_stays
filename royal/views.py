@@ -7,7 +7,7 @@ import os
 import random
 import string
 from django.conf import settings
-from urllib.parse import urlencode
+# from urllib.parse import urlencode
 # from reportlab.lib.pagesizes import letter
 # from reportlab.pdfgen import canvas
 # from reportlab.lib import colors

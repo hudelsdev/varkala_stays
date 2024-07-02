@@ -4358,6 +4358,14 @@ img.logo-img {
     padding: 7px 14px;
     display: none;
   }
+  h4.txt_cnct_sngle {
+    padding: 7px 14px;
+    display: none;
+  }
+  h4.txt_cnct_min {
+    padding: 7px 14px;
+    color: white;
+  }
   }
 
 
@@ -4379,6 +4387,15 @@ img.logo-img {
   h4.txt_cnct {
     padding: 7px 14px;
     color: black;
+}
+  h4.txt_cnct_sngle {
+    padding: 7px 14px;
+    color: white;
+}
+h4.txt_cnct_min {
+  padding: 7px 14px;
+  color: white;
+  display: none;
 }
   
   .gallery_img.hotel_image {
@@ -5353,9 +5370,19 @@ button.view-map {
   }
 } */
 
-.footer-row {
-  display: flex;
-  justify-content: center;
+@media (max-width: 768px){
+  .footer-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 767px) {
+  .footer-row {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer_title {
@@ -5393,6 +5420,21 @@ button.view-map {
 /*-------------------room--details--start --------------------- */
 
 @media (min-width:767px) { 
+  .room_card {
+    display: flex;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 75%;
+    height: 300px;
+    /* max-width: 800px; */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+  }
     .room_card {
         display: flex;
         border: 1px solid #ddd;
@@ -5441,6 +5483,13 @@ button.view-map {
   .room_details li {
     margin-bottom: 17px;
     color: black;
+  }
+  .lsted_prpties{
+    color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -5498,6 +5547,27 @@ button.view-map {
     margin-bottom: 10px;
     color: black;
   }
+  .lsted_prpties{
+    color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .txt_our_prptes{
+    font-size: 25px;
+  }
 }
 
+.bottom_line {
+  width: 100%;
+  background-color: lightblue;
+  height: 25px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+
+
+/* ------------hotet--details--end----------- */
 /* ------------hotet--details--end----------- */

@@ -98,5 +98,18 @@ def villa_skyframe_details(request):
 def cliffcounty_details(request):
     return render(request, "cliffcounty_details.html")
 
+def ss_beach_resort_details(request):
+    return render(request, "ss_beach_resort.html")
 
+
+def zion_villa_resort_details(request):
+    return render(request, "zion_villa_resort.html")
+
+
+def gone_costal_details(request):
+    return render(request, "gone_costal.html")
+
+
+def kerala_bamboo_details(request):
+    return render(request, "kerala_bamboo.html")
 

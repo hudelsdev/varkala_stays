@@ -1047,6 +1047,170 @@ ana
   background: url(../image/property_img/moon_waves_1.jpg) no-repeat scroll center bottom/cover;
 }
 /* end-nisara */
+
+/* -ss_beach_resort */
+.blog_banner_ss_beach_resort {
+  min-height: 780px;
+  overflow: hidden;
+}
+
+
+.blog_banner_ss_beach_resort .banner_content {
+  margin-bottom: 0px;
+  margin-top: 106px;
+}
+
+.blog_banner_ss_beach_resort .banner_content h4 {
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog_banner_ss_beach_resort .banner_content p {
+  font-size: 16px;
+  padding: 0px;
+  margin-bottom: 35px;
+}
+
+.f_48 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.blog_banner_two {
+  padding: 187px 0px 104px;
+}
+
+.blog_banner_ss_beach_resort .bg-parallax{
+  background: url(../image/property_img/ss_beach_resort_main.jpeg) no-repeat scroll center bottom/cover;
+}
+/* end-ss_beach_resort */
+
+/* -zion_beach_resort */
+.blog_banner_zion_beach_resort {
+  min-height: 780px;
+  overflow: hidden;
+}
+
+
+.blog_banner_zion_beach_resort .banner_content {
+  margin-bottom: 0px;
+  margin-top: 106px;
+}
+
+.blog_banner_zion_beach_resort .banner_content h4 {
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog_banner_zion_beach_resort .banner_content p {
+  font-size: 16px;
+  padding: 0px;
+  margin-bottom: 35px;
+}
+
+.f_48 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.blog_banner_two {
+  padding: 187px 0px 104px;
+}
+
+.blog_banner_zion_beach_resort .bg-parallax{
+  background: url(../image/property_img/zion_villa_main.jpg) no-repeat scroll center bottom/cover;
+}
+/* end-zion_beach_resort */
+
+/* -gone_costal_hmsay */
+.blog_banner_gone_costal {
+  min-height: 780px;
+  overflow: hidden;
+}
+
+
+.blog_banner_gone_costal .banner_content {
+  margin-bottom: 0px;
+  margin-top: 106px;
+}
+
+.blog_banner_gone_costal .banner_content h4 {
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog_banner_gone_costal .banner_content p {
+  font-size: 16px;
+  padding: 0px;
+  margin-bottom: 35px;
+}
+
+.f_48 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.blog_banner_two {
+  padding: 187px 0px 104px;
+}
+
+.blog_banner_gone_costal .bg-parallax{
+  background: url(../image/property_img/gone_costal_main.jpg) no-repeat scroll center bottom/cover;
+}
+/* end-gone_costal */
+
+/* kerala_bamboo */
+.blog_banner_kerala_bamboo {
+  min-height: 780px;
+  overflow: hidden;
+}
+
+
+.blog_banner_kerala_bamboo .banner_content {
+  margin-bottom: 0px;
+  margin-top: 106px;
+}
+
+.blog_banner_kerala_bamboo .banner_content h4 {
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog_banner_kerala_bamboo .banner_content p {
+  font-size: 16px;
+  padding: 0px;
+  margin-bottom: 35px;
+}
+
+.f_48 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.blog_banner_two {
+  padding: 187px 0px 104px;
+}
+
+.blog_banner_kerala_bamboo .bg-parallax{
+  background: url(../image/property_img/kerla_bambo_main.jpg) no-repeat scroll center bottom/cover;
+}
+/* end-kerala_bamboo */
 /*=============End Blog Banner css =============*/
 
 
@@ -5508,7 +5672,6 @@ button.view-map {
     margin-bottom: 10px;
   }
 
-
   .room_card-image {
     width: 100%;
     height: 25vh;
@@ -5566,6 +5729,8 @@ button.view-map {
   margin-bottom: 15px;
   display: flex;
 }
+
+
 
 
 

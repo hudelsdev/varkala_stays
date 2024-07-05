@@ -48,7 +48,7 @@
                                     <li class="nav-item"><a class="nav-link" href="#">Blog Details</a></li>
                                 </ul>
                             </li>  -->
-                            <li class="nav-item"><a class="nav-link" href="{%url 'property_list'%}">property_list</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{%url 'property_list'%}">Property list</a></li>
                             <li class="nav-item"><a class="nav-link" href="{%url 'contact'%}">Contact</a></li>
                         </ul>
                     </div> 
@@ -103,22 +103,34 @@
                             The property provides a variety of Ayurveda packages to heal your body. <br>
                         </p> <br>
 
-                        <span class="txt_roomtype">Room Types</span><br>
-                        <div class="list_div">
-                            <li>NON AC sea view Standard Room  --  Room Only  &  Room with Breakfast available</li>
-                            <li>AC deluxe double room with garden view  --  Room with Breakfast</li>
-                            <li>AC sea view deluxe double room with balcony  --  Room Only & Room with Breakfast available</li>
-                            <li>Premium AC deluxe double room with balcony  --  Room Only & Room with Breakfast available</li>
-                            <li>AC sea view family room with balcony  --  --  Room Only & Room with Breakfast available</li>
-                        </div><br><br>
+                        
+                        <div class="property_div">
+                            <div class="head_div">
+                            <span class="txt_roomtype">Room Types</span></div>
+                                <div class="list_div">
+                                    {% comment %} li sentence changed  {% endcomment %}
+                                    <li>NON AC sea view Standard Room  --  Room Only  &  Room with Breakfast available</li>
+                                    <li>AC deluxe double room with garden view  --  Room with Breakfast</li>
+                                    <li>AC sea view deluxe double room with balcony  --  Room Only & Room with Breakfast available</li>
+                                    <li>Premium AC deluxe double room with balcony  --  Room Only & Room with Breakfast available</li>
+                                    <li>AC sea view family room with balcony  --  --  Room Only & Room with Breakfast available</li>
+                        
+                                </div>
+                            </div><br>
                         <!-- <span>Property Rules</span><br> -->
-                        <div class="list_div">
-                            <h2>Property Rules</h2>
-                            <p>Check-in: 12 PM Check-out: 11 AM</p>
+                        <div class="property_div">
+                            <div class="list_div">
+                                <div class="head_div">
+                                    <h3>Property Rules</h3>
+                                </div>
+                            <p>Check-in: 12 PM <span>&</span>  Check-out: 11 AM</p>
+                            
                             <li>Passport, Aadhar, Govt. ID and Driving License are accepted as ID proof(s)</li>
                             <li>Pets are not allowed</li>
                             <li>Outside food is not allowed</li>
-                        </div><br><br>
+                            
+                            </div>
+                        </div><br>
 
 
                         <h1 class="Location">Room Types</h1>          
@@ -215,7 +227,7 @@
                                 </ul>
                             </div>
                         </div> 
-                        </div>
+                        
 
                         <h1 class="Location">Hotel-images</h1>
                         <div class="hotel-gallery" id="gallery">

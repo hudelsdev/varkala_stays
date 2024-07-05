@@ -23,6 +23,7 @@ urlpatterns =[
     path('zion_villa_resort/',zion_villa_resort_details,name='zion_villa_resort_details'),
     path('gone_costal/',gone_costal_details,name='gone_costal_details'),
     path('kerala_bamboo/',kerala_bamboo_details,name='kerala_bamboo_details'),
+    path('urban_cliff/',urban_cliff_details,name='urban_cliff_details'),
     
         # voucher creations urls
     

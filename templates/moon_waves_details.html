@@ -45,7 +45,7 @@
                                     <li class="nav-item"><a class="nav-link" href="#">Blog Details</a></li>
                                 </ul>
                             </li>  -->
-                            <li class="nav-item"><a class="nav-link" href="{%url 'property_list'%}">Propert List</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{%url 'property_list'%}">Property List</a></li>
                             <li class="nav-item"><a class="nav-link" href="{%url 'contact'%}">Contact</a></li>
                         </ul>
                     </div> 
@@ -91,27 +91,36 @@
                     <p class="tax-price">
                         Located in Varkala, a 3-minute walk from Varkala Beach, Moon Waves Beach Resort provides accommodations with a terrace, free private parking, and a restaurant. <br> The property is around 46.7 km from Sree Padmanabhaswamy Temple, 46.7 km from Napier Museum, and a 16-minute walk from Janardhana swamy Temple. <br> The property has a 24-hour front desk, airport transportation, room service, and free WIFI. At the resort, every room has a desk. With a private bathroom equipped with a shower and free toiletries, <br> certain Moon Waves Beach Resort units also provide guests with a patio.                    </p> <br>
 
-                        <span class="txt_roomtype">Room Types</span><br>
-                        <div class="list_div">
-                            <li>Standard NON AC  --  Room With Free Cancellation ( No meals included )</li>
-                            <li>deluxe  AC  --  Room With Free Cancellation ( No meals included )</li>
-                            <li>4 Bed NON AC Room  --  Room With Free Cancellation ( No meals included ) & Room With Free Cancellation ( Breakfast only)</li>
-                            <li>Wood House AC  --  Room With Free Cancellation ( No meals included ) </li>
-                            <li>6 Bed Dorm AC  --  Room With Free Cancellation ( No meals included ) </li>
-                        </div><br><br>
+                        <<div class="property_div">
+                            <div class="head_div">
+                            <span class="txt_roomtype">Room Types</span></div>
+                                <div class="list_div">
+                                    {% comment %} li sentence changed  {% endcomment %}
+                                    <li>Standard NON AC  --  Room With Free Cancellation ( No meals included )</li>
+                                    <li>deluxe  AC  --  Room With Free Cancellation ( No meals included )</li>
+                                    <li>4 Bed NON AC Room  --  Room With Free Cancellation ( No meals included ) & Room With Free Cancellation ( Breakfast only)</li>
+                                    <li>Wood House AC  --  Room With Free Cancellation ( No meals included ) </li>
+                                    <li>6 Bed Dorm AC  --  Room With Free Cancellation ( No meals included ) </li>
+                                </div>
+                            </div><br>
                         <!-- <span>Property Rules</span><br> -->
-                        <div class="list_div">
-                            <h3>Property Rules</h3>
-                            <p>Check-in: 12 PM Check-out: 11 AM</p>
+                        <div class="property_div">
+                            <div class="list_div">
+                                <div class="head_div">
+                                    <h3>Property Rules</h3>
+                                </div>
+                            <p>Check-in: 12 PM <span>&</span>  Check-out: 11 AM</p>
+                            
                             <li>Passport, Aadhar, Govt. ID and Driving License are accepted as ID proof(s)</li>
                             <li>Pets are not allowed.</li>
-                        </div><br><br>
+                            </div>
+                        </div><br>
 
                         <div class="room_main">
                             <!--hotel-room 1-->
         
                                 <div class="room_card">
-                                    <img src="{% static 'image/property_img/cliff_a-c deluxe room.jpg' %}" alt="Swimming pool" class="room_card-image">
+                                    <img src="{% static 'image/property_img/moon_waves_ac.jpeg' %}" alt="Swimming pool" class="room_card-image">
                                     <div class="room_card-content">
                                         <h2>Deluxe AC Room - with Balcony </h2>
                                         <ul class="room_details">
@@ -128,7 +137,7 @@
                             <!--hotel-room-2-->
         
                                 <div class="room_card">
-                                    <img src="{% static 'image/property_img/cliff non a-c.jpg' %}" alt="Swimming pool" class="room_card-image">
+                                    <img src="{% static 'image/property_img/moonwaves_6.jpeg' %}" alt="Swimming pool" class="room_card-image">
                                     <div class="room_card-content">
                                         <h2>Standard Non AC Room</h2>
                                         <ul class="room_details">
@@ -143,7 +152,7 @@
                                 <!-- hotel-room-3 -->
     
                                 <div class="room_card">
-                                    <img src="{% static 'image/property_img/cliff_a-c deluxe room.jpg' %}" alt="Swimming pool" class="room_card-image">
+                                    <img src="{% static 'image/property_img/moonwaves_room1.jpg' %}" alt="Swimming pool" class="room_card-image">
                                     <div class="room_card-content">
                                         <h2>4 Bed Non AC Room - with Balcony </h2>
                                         <ul class="room_details">
@@ -160,7 +169,7 @@
                                 <!-- ḥotel-room-4 -->
     
                                 <div class="room_card">
-                                    <img src="{% static 'image/property_img/cliff_a-c deluxe room.jpg' %}" alt="Swimming pool" class="room_card-image">
+                                    <img src="{% static 'image/property_img/moonwaves_hall.jpeg' %}" alt="Swimming pool" class="room_card-image">
                                     <div class="room_card-content">
                                         <h2>Wood House AC - with Balcony </h2>
                                         <ul class="room_details">
@@ -176,7 +185,7 @@
 
                                 <!-- room-5 -->
                                 <div class="room_card">
-                                    <img src="{% static 'image/property_img/cliff_a-c deluxe room.jpg' %}" alt="Swimming pool" class="room_card-image">
+                                    <img src="{% static 'image/property_img/moon_waves_6bed_dorm.jpg' %}" alt="Swimming pool" class="room_card-image">
                                     <div class="room_card-content">
                                         <h2>6 Bed Dorm AC  </h2>
                                         <ul class="room_details">

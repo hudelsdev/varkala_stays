@@ -113,3 +113,5 @@ def gone_costal_details(request):
 def kerala_bamboo_details(request):
     return render(request, "kerala_bamboo.html")
 
+def urban_cliff_details(request):
+    return render(request, "urban_cliff.html")

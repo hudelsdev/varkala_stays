@@ -45,7 +45,7 @@
                                     <li class="nav-item"><a class="nav-link" href="#">Blog Details</a></li>
                                 </ul>
                             </li>  -->
-                            <li class="nav-item"><a class="nav-link" href="{%url 'property_list'%}">Property list</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{%url 'property_list'%}">Property List</a></li>
                             <li class="nav-item"><a class="nav-link" href="{%url 'contact'%}">Contact</a></li>
                         </ul>
                     </div> 
@@ -94,19 +94,28 @@
                         A 5-minute walk from the Beach. The Haiwa By Hudels is an ideal tourist destination to stay in as it is located at a very convenient distance from the railway station and the airport. <br> . All the 10 rooms in the hotel provide a relaxing time for the guests. The rooms are designed with colorful interiors and fine furnishings. The tiled floors add grace to the rooms. <br> The rooms are installed with all the requirements that a person looks for. The rooms are divided into Deluxe A/C and Standard Non A/C. All the rooms have an attached bathrooms.
                     </p> <br>
                     
-                    <span class="txt_roomtype">Room Types</span><br>
-                    <div class="list_div">
-                        <li>Standard Non AC room --  Room Only </li>
-                        <li>Deluxe AC Room  --  Room Only</li>
-                    </div><br><br>
+                    <div class="property_div">
+                        <div class="head_div">
+                        <span class="txt_roomtype">Room Types</span></div>
+                            <div class="list_div">
+                                {% comment %} li sentence changed  {% endcomment %}
+                                <li>Standard Non AC room --  Room Only </li>
+                                <li>Deluxe AC Room  --  Room Only</li>
+                            </div>
+                        </div><br>
 
                     <!-- <span>Property Rules</span><br> -->
-                    <div class="list_div">
-                        <h3>Property Rules</h3>
-                        <p>Check-in: 12 PM - 7:30 PM  Check-out: 11 AM</p>
+                    <div class="property_div">
+                        <div class="list_div">
+                            <div class="head_div">
+                                <h3>Property Rules</h3>
+                            </div>
+                        <p>Check-in: 12 PM <span>&</span>  Check-out: 11 AM</p>
+                        
                         <li>Passport, Aadhar, Govt. ID and Driving License are accepted as ID proof(s)</li>
                         <li>Pets are not allowed.</li>
-                    </div><br><br>
+                        </div>
+                    </div><br>
 
                     <div class="room_main">
                         <!--hotel-room 1-->

@@ -77,12 +77,12 @@
                     <br><br>
                     <div class="gallery">
                         <div class="main-image">
-                            <img src="{% static 'image/property_img/zion_villa_main.jpg' %}" alt="Main Pool">
+                            <img src="{% static 'image/property_img/zion_new.png' %}" alt="Main Pool">
                             <!-- <p>228 PHOTOS & VIDEOS</p> -->
                         </div>
                         <div class="thumbnails">
                             <img src="{% static 'image/property_img/zion_villa_room1.jpg' %}" alt="Video Thumbnail">
-                            <img src="{% static 'image/property_img/zion_villa_room2.jpg' %}" alt="Room">
+                            <img src="{% static 'image/property_img/zion_stndrd_nonac_room.jpeg' %}" alt="Room">
                         </div>
                     </div>
                     <div class="hotel-name">
@@ -92,22 +92,29 @@
                         Zion Villa Beach view Resort is a budget hotel in Varkala, located in close proximity to the main market and travel hubs. <br> Guests are offered accommodation in spacious rooms, equipped with amenities like .Parking facility and medical aid are few of the conveniences offered at Zion Villa Beach view Resort in Varkala.
                     </p> <br>
 
-                    <span class="txt_roomtype">Room Types</span><br>
-                        <div class="list_div">
-                            <li>Deluxe AC Room With Sea-View -- Room Only</li>    
-                            <li>Standard NON AC -- Room Only</li>
-                        </div>
+                    <div class="property_div">
+                        <div class="head_div">
+                        <span class="txt_roomtype">Room Types</span></div>
+                            <div class="list_div">
+                                <li>Deluxe AC Room With Sea-View -- Room Only</li>    
+                                <li>Standard NON AC -- Room Only</li> 
+                                <li>Standard AC  -- Room Only</li> 
+                            </div>
+                        </div><br>
 
                     <!-- <span>Property Rules</span><br> -->
-                    <div class="list_div">
-                        <h3>Property Rules</h3>
-                        <p>CHECKIN : 12:00 PM   CHECKOUT : 12:00 PM</p>
-                        <li>Passport, Aadhar, Govt. ID and Driving License are accepted as ID proof(s)</li>
-                        <li>Outside food is not allowed </li>
-                        <li>Pets are not allowed.</li>
-                        <li>Smoking within the premises is not allowed</li>
-
-                    </div><br><br>
+                    <div class="property_div">
+                        <div class="list_div">
+                            <div class="head_div">
+                                <h3>Property Rules</h3>
+                            </div>
+                            <p>CHECKIN : 12:00 PM   CHECKOUT : 12:00 AM</p>
+                            <li>Passport, Aadhar, Govt. ID and Driving License are accepted as ID proof(s)</li>
+                            <li>Outside food is not allowed </li>
+                            <li>Pets are not allowed.</li>
+                            <li>Smoking within the premises is not allowed</li>
+                        </div>
+                    </div><br>
 
                     <div class="room_main">
                         <!--hotel-room 1--> 
@@ -118,7 +125,7 @@
                                 <div class="room_card-content">
                                     <h2>Deluxe AC Room With Sea-View</h2>
                                     <ul class="room_details">
-                                        <li><img src="{% static 'image/property_img/bed-alt.png' %}" alt="" style="height: 20px; width: 20px;">  Twin Bed </li>
+                                        <li><img src="{% static 'image/property_img/bed-alt.png' %}" alt="" style="height: 20px; width: 20px;">  Double Bed </li>
                                         <li><img src="{% static 'image/property_img/wifi.png' %}" alt="" style="height: 20px; width: 20px;"> Wi-Fi </li>
                                         <!-- <li><img src="{% static 'image/property_img/water-bottle.png' %}" alt="" style="height: 20px; width: 20px;"> Complimentar water bottle </li> -->
                                         <!-- <li><img src="{% static 'image/icon_png/ban.png' %}" alt="" style="height: 20px; width: 20px;"> Non-Refundable</li> -->
@@ -129,11 +136,25 @@
                         <!--hotel-room-2-->
     
                             <div class="room_card">
-                                <img src="{% static 'image/property_img/zion_villa_room2.jpg' %}" alt="Swimming pool" class="room_card-image">
+                                <img src="{% static 'image/property_img/zion_stanrd_acroom.jpeg' %}" alt="Swimming pool" class="room_card-image">
                                 <div class="room_card-content">
                                     <h2>Standard AC Room</h2>
                                     <ul class="room_details">
-                                        <li><img src="{% static 'image/property_img/bed-alt.png' %}" alt="" style="height: 20px; width: 20px;">  Twin Bed </li>
+                                        <li><img src="{% static 'image/property_img/bed-alt.png' %}" alt="" style="height: 20px; width: 20px;">  Double Bed </li>
+                                        <!-- <li><img src="{% static 'image/property_img/Desk.png' %}" alt="" style="height: 20px; width: 20px;"> Work Desk </li> -->
+                                        <li><img src="{% static 'image/property_img/wifi.png' %}" alt="" style="height: 20px; width: 20px;"> Wi-Fi </li>
+                                        <!-- <li><img src="{% static 'image/property_img/water-bottle.png' %}" alt="" style="height: 20px; width: 20px;"> Complimentar water bottle </li> -->
+                                    </ul>
+                                </div>
+                            </div> 
+
+                             <!--hotel-room-3-->
+                            <div class="room_card">
+                                <img src="{% static 'image/property_img/zion_stndrd_nonac_room.jpeg' %}" alt="Swimming pool" class="room_card-image">
+                                <div class="room_card-content">
+                                    <h2>Standard Non AC Room</h2>
+                                    <ul class="room_details">
+                                        <li><img src="{% static 'image/property_img/bed-alt.png' %}" alt="" style="height: 20px; width: 20px;">  Double Bed </li>
                                         <!-- <li><img src="{% static 'image/property_img/Desk.png' %}" alt="" style="height: 20px; width: 20px;"> Work Desk </li> -->
                                         <li><img src="{% static 'image/property_img/wifi.png' %}" alt="" style="height: 20px; width: 20px;"> Wi-Fi </li>
                                         <!-- <li><img src="{% static 'image/property_img/water-bottle.png' %}" alt="" style="height: 20px; width: 20px;"> Complimentar water bottle </li> -->
@@ -153,14 +174,14 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="gallery_item">
+                        <div class="gallery_item">
                             <div class="gallery_img">
-                                <img src="{% static 'image/property_img/eva_out.jpg' %}" alt="">
+                                <img src="{% static 'image/property_img/zion_new.png' %}" alt="">
                                 <div class="hover">
-                                    <a class="light" href="{% static 'image/property_img/eva_out.jpg ' %}"><i class="fa fa-expand"></i></a>
+                                    <a class="light" href="{% static 'image/property_img/zion_new.png ' %}"><i class="fa fa-expand"></i></a>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                         <!-- <div class="gallery_item">
                             <div class="gallery_img">
                                 <img src="{% static 'image/property_img/cliffcounty_inside3.jpeg' %}" alt="">
@@ -182,17 +203,17 @@
                         </div>
                         <div class="gallery_item">
                             <div class="gallery_img">
-                                <img src="{% static 'image/property_img/ss_beach_resort_room2.jpeg' %}" alt="">
+                                <img src="{% static 'image/property_img/zion_stndrd_nonac_room.jpeg' %}" alt="">
                                 <div class="hover">
-                                    <a class="light" href="{% static 'image/property_img/ss_beach_resort_room2.jpeg' %}"><i class="fa fa-expand"></i></a>
+                                    <a class="light" href="{% static 'image/property_img/zion_stndrd_nonac_room.jpeg' %}"><i class="fa fa-expand"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="gallery_item">
                             <div class="gallery_img">
-                                <img src="{% static 'image/property_img/zion_villa_room2.jpg' %}" alt="">
+                                <img src="{% static 'image/property_img/zion_stanrd_acroom.jpeg' %}" alt="">
                                 <div class="hover">
-                                    <a class="light" href="{% static 'image/property_img/zion_villa_room2.jpg' %}"><i class="fa fa-expand"></i></a>
+                                    <a class="light" href="{% static 'image/property_img/zion_stanrd_acroom.jpeg' %}"><i class="fa fa-expand"></i></a>
                                 </div>
                             </div>
                         </div>

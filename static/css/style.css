@@ -4524,9 +4524,8 @@ img.logo-img {
   
   /* created a head_div and designed */
   .head_div{
-    margin:left;
     background-color:#fff;
-    width:302px;
+    width:100%;
     height: 59px;
     
     

@@ -2,7 +2,6 @@ import logging
 from django.shortcuts import render,redirect
 from django.core.mail import send_mail
 from django.http import HttpResponse
-import json
 import os
 import random
 import string

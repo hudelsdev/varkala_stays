@@ -27,9 +27,9 @@ urlpatterns =[
     
         # voucher creations urls
     
-    # path('voucher_create_index/', voucher_create_index, name='voucher_create_index'),
-    # path('create_customer_voucher/', create_customer_voucher, name='create_customer_voucher'),
-    # path('create_hotel_voucher/', create_hotel_voucher, name='create_hotel_voucher'),
-    # path('success/', voucher_success, name='voucher_success'),
-    # path('download/<str:voucher_type>/', download_voucher, name='download_voucher'),
+    path('voucher_create_index/', voucher_create_index, name='voucher_create_index'),
+    path('create_customer_voucher/', create_customer_voucher, name='create_customer_voucher'),
+    path('create_hotel_voucher/', create_hotel_voucher, name='create_hotel_voucher'),
+    path('success/', voucher_success, name='voucher_success'),
+    path('download/<str:voucher_type>/', download_voucher, name='download_voucher'),
 ]

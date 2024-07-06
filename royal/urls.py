@@ -31,5 +31,5 @@ urlpatterns =[
     path('create_customer_voucher/', create_customer_voucher, name='create_customer_voucher'),
     path('create_hotel_voucher/', create_hotel_voucher, name='create_hotel_voucher'),
     path('success/', voucher_success, name='voucher_success'),
-    path('download/<str:voucher_type>/', download_voucher, name='download_voucher'),
+    # path('download/<str:voucher_type>/', download_voucher, name='download_voucher'),
 ]

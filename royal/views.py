@@ -3,14 +3,9 @@ from django.shortcuts import render,redirect
 from django.core.mail import send_mail
 from django.http import HttpResponse
 import os
-import random
-import string
 from django.conf import settings
 from urllib.parse import urlencode
-from reportlab.lib.pagesizes import letter
-from reportlab.pdfgen import canvas
-from reportlab.lib import colors
-from reportlab.platypus import Table,TableStyle
+
 
 logger = logging.getLogger(__name__)
 

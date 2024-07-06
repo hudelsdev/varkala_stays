@@ -170,7 +170,6 @@ def create_customer_voucher(request):
             'remarks': request.POST.get('remarks'),
         }
 
-        # save_voucher(voucher_data)
         query_string = urlencode(voucher_data)
         return redirect(f'/success/?{query_string}')
 
@@ -205,7 +204,6 @@ def create_hotel_voucher(request):
             'remarks': request.POST.get('remarks'),
         }
 
-        # save_voucher(voucher_data)
         query_string = urlencode(voucher_data)
         return redirect(f'/success/?{query_string}')
 
@@ -217,21 +215,6 @@ def voucher_success(request):
     voucher_data = request.GET.get('voucher_data')
     return render(request, 'voucher_success.html', {'voucher_data': voucher_data})
 
-
-
-# def save_voucher(voucher_data):
-#     vouchers_file_path = os.path.join(settings.BASE_DIR, 'vouchers_data.json')
-
-#     if os.path.exists(vouchers_file_path):
-#         with open(vouchers_file_path, 'r') as file:
-#             vouchers = json.load(file)
-#     else:
-#         vouchers = []
-
-#     vouchers.append(voucher_data)
-
-#     with open(vouchers_file_path, 'w') as file:
-#         json.dump(vouchers, file, indent=4)
 
 
 

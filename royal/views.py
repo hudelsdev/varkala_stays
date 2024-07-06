@@ -236,17 +236,23 @@ def voucher_success(request):
 
 
 def download_voucher(request, voucher_type):
-    voucher_data = request.GET.dict()
+    try:
+        voucher_data = request.GET.dict()
 
-    response = HttpResponse(content_type='application/pdf')
-    if voucher_type == 'customer':
-        response['Content-Disposition'] = 'attachment; filename="customer_voucher.pdf"'
-        create_customer_voucher_pdf(response, voucher_data)
-    elif voucher_type == 'hotel':
-        response['Content-Disposition'] = 'attachment; filename="hotel_voucher.pdf"'
-        create_hotel_voucher_pdf(response, voucher_data)
+        response = HttpResponse(content_type='application/pdf')
+        if voucher_type == 'customer':
+            response['Content-Disposition'] = 'attachment; filename="customer_voucher.pdf"'
+            create_customer_voucher_pdf(response, voucher_data)
+        elif voucher_type == 'hotel':
+            response['Content-Disposition'] = 'attachment; filename="hotel_voucher.pdf"'
+            create_hotel_voucher_pdf(response, voucher_data)
+        else:
+            return HttpResponse("Invalid voucher type", status=400)
 
-    return response
+        return response
+    except Exception as e:
+        print(f"Error generating PDF: {e}")
+        return HttpResponse("Internal Server Error", status=500)
 
 
 

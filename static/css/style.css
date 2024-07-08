@@ -2580,13 +2580,13 @@ justify-content: flex-start;
 }
 
 .contact_form .form-group .form-control {
-  font-size: 13px;
-  line-height: 26px;
-  color: #999;
-  border: 1px solid #eeeeee;
-  font-family: "Poppins", sans-serif;
-  border-radius: 0px;
-  padding-left: 20px;
+font-size: 13px;
+line-height: 26px;
+color: #999;
+font-family: "Poppins", sans-serif;
+border-radius: 5px;
+padding-left: 20px;
+border: none;
 }
 
 .contact_form .form-group .form-control:focus {

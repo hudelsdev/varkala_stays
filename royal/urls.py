@@ -24,6 +24,9 @@ urlpatterns =[
     path('gone_costal/',gone_costal_details,name='gone_costal_details'),
     path('kerala_bamboo/',kerala_bamboo_details,name='kerala_bamboo_details'),
     path('urban_cliff/',urban_cliff_details,name='urban_cliff_details'),
+    path('pearl_beach_resort/',pearl_beach_resort_details,name='pearl_beach_resort_details'),
+    path('varkala_villa/',varkala_villa_details,name='varkala_villa_details'),
+    path('pura_vida/',pura_vida_details,name='pura_vida_details'),
     
         # voucher creations urls
     

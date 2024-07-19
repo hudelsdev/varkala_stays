@@ -1,8 +1,19 @@
 /*----------------------------------------------------
+@File: Default Styles
+@Author: Rocky
+@URL: http://wethemez.com
+Author E-mail: rockybd1995@gmail.com
 
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
 ---------------------------------------------------- */
 /*=====================================================================
-
+@Template Name: Royal Hotel
+@Author: Rocky
+@Developed By: Rocky
+@Developer URL: http://rocky.wethemez.com
+Author E-mail: rockybd1995@gmail.com
 
 @Default Styles
 
@@ -1241,6 +1252,129 @@ ana
   background: url(../image/property_img/urban_cliff_main.jpg) no-repeat scroll center bottom/cover;
 }
 /* end-urban_cliff */
+
+/* pearl_beach_resort */
+.blog_banner_pearl_beach_resort {
+  min-height: 780px;
+  overflow: hidden;
+}
+
+
+.blog_banner_pearl_beach_resort .banner_content {
+  margin-bottom: 0px;
+  margin-top: 106px;
+}
+
+.blog_banner_pearl_beach_resort .banner_content h4 {
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog_banner_pearl_beach_resort .banner_content p {
+  font-size: 16px;
+  padding: 0px;
+  margin-bottom: 35px;
+}
+
+.f_48 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.blog_banner_two {
+  padding: 187px 0px 104px;
+}
+
+.blog_banner_pearl_beach_resort .bg-parallax{
+  background: url(../image/property_img/d_pearl_main.jpg) no-repeat scroll center bottom/cover;
+}
+/* end-pearl_beach_resort */
+
+/* varkala_villa */
+.blog_banner_varkala_villa {
+  min-height: 780px;
+  overflow: hidden;
+}
+
+
+.blog_banner_varkala_villa .banner_content {
+  margin-bottom: 0px;
+  margin-top: 106px;
+}
+
+.blog_banner_varkala_villa .banner_content h4 {
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog_banner_varkala_villa .banner_content p {
+  font-size: 16px;
+  padding: 0px;
+  margin-bottom: 35px;
+}
+
+.f_48 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.blog_banner_two {
+  padding: 187px 0px 104px;
+}
+
+.blog_banner_varkala_villa .bg-parallax{
+  background: url(../image/property_img/varkla_villa_main.png) no-repeat scroll center bottom/cover;
+}
+/* end-varkala_villa */
+
+/* pura_vida */
+.blog_banner_pura_vida {
+  min-height: 780px;
+  overflow: hidden;
+}
+
+
+.blog_banner_pura_vida .banner_content {
+  margin-bottom: 0px;
+  margin-top: 106px;
+}
+
+.blog_banner_pura_vida .banner_content h4 {
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog_banner_pura_vida .banner_content p {
+  font-size: 16px;
+  padding: 0px;
+  margin-bottom: 35px;
+}
+
+.f_48 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.blog_banner_two {
+  padding: 187px 0px 104px;
+}
+
+.blog_banner_pura_vida .bg-parallax{
+  background: url(../image/property_img/pura_vida_main.jpeg) no-repeat scroll center bottom/cover;
+}
+/* end-pura_vida */
 /*=============End Blog Banner css =============*/
 
 
@@ -2580,13 +2714,13 @@ justify-content: flex-start;
 }
 
 .contact_form .form-group .form-control {
-font-size: 13px;
-line-height: 26px;
-color: #999;
-font-family: "Poppins", sans-serif;
-border-radius: 5px;
-padding-left: 20px;
-border: none;
+  font-size: 13px;
+  line-height: 26px;
+  color: #999;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  padding-left: 20px;
+  border: none;
 }
 
 .contact_form .form-group .form-control:focus {

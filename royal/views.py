@@ -122,6 +122,16 @@ def urban_cliff_details(request):
     return render(request, "urban_cliff.html")
 
 
+def pearl_beach_resort_details(request):
+    return render(request, "pearl_beach_resort.html")
+
+
+def varkala_villa_details(request):
+    return render(request, "varkala_villa.html")
+
+
+def pura_vida_details(request):
+    return render(request, "pura_vida.html")
 
 # voucher cretions views 
 

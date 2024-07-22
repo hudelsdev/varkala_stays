@@ -1642,7 +1642,7 @@ justify-content: flex-start;
 @media (min-width:767px){
   div#gallery_page{
     position: relative !important;
-    height: 975px  !important;
+    height: 1780px !important;
   }
 }
 

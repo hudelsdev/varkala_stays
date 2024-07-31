@@ -13,7 +13,7 @@ urlpatterns =[
     
     path('ashokam/',ashokam_details,name='ashokam_details'),
     path('cliffcounty/',cliffcounty_details,name='cliffcounty_details'),
-    path('evebeach/',eva_beach_details,name='evebeach_details'),
+    path('evabeach/',eva_beach_details,name='evabeach_details'),
     path('haiwa/',haiwa_details,name='haiwa_details_details'),
     path('skyframe/',skyframe_details,name='skyframe_details'),
     path('nisara/',nisara_details,name='nisara_details'),

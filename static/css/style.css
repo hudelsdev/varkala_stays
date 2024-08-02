@@ -1007,7 +1007,7 @@ ana
 }
 /* end-nisara */
 
-/* -nisara */
+/* -moonwaves */
 .blog_banner_moonwaves {
   min-height: 780px;
   overflow: hidden;
@@ -1046,7 +1046,48 @@ ana
 .blog_banner_moonwaves .bg-parallax{
   background: url(../image/property_img/moon_waves_1.jpg) no-repeat scroll center bottom/cover;
 }
-/* end-nisara */
+/* end-moonwaves */
+
+/* -varkalastays_premium */
+.blog_banner_varkalastays_premium {
+  min-height: 780px;
+  overflow: hidden;
+}
+
+
+.blog_banner_varkalastays_premium .banner_content {
+  margin-bottom: 0px;
+  margin-top: 106px;
+}
+
+.blog_banner_varkalastays_premium .banner_content h4 {
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog_banner_varkalastays_premium .banner_content p {
+  font-size: 16px;
+  padding: 0px;
+  margin-bottom: 35px;
+}
+
+.f_48 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.blog_banner_two {
+  padding: 187px 0px 104px;
+}
+
+.blog_banner_varkalastays_premium .bg-parallax{
+  background: url(../image/property_img/varkalastays_prm_byhudels_main.jpg) no-repeat scroll center bottom/cover;
+}
+/* end-varkalastays_premium */
 
 /* -ss_beach_resort */
 .blog_banner_ss_beach_resort {

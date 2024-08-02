@@ -101,6 +101,9 @@ def villa_skyframe_details(request):
 def cliffcounty_details(request):
     return render(request, "cliffcounty_details.html")
 
+def varkalastays_premium_by_hudels_details(request):
+    return render(request, "varkalastays_premium_by_hudels.html")
+
 
 def ss_beach_resort_details(request):
     return render(request, "ss_beach_resort.html")

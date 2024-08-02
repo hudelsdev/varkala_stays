@@ -18,6 +18,7 @@ urlpatterns =[
     path('skyframe/',skyframe_details,name='skyframe_details'),
     path('nisara/',nisara_details,name='nisara_details'),
     path('moon_waves/',moon_waves_details,name='moon_waves_details'),
+    path('varkalastays_premium_by_hudels/',varkalastays_premium_by_hudels_details,name='varkalastays_premium_by_hudels_details'),
     path('villa_skyframe/',villa_skyframe_details,name='villa_skyframe_details'), 
     path('ss_beach_resort/',ss_beach_resort_details,name='ss_beach_resort_details'),
     path('zion_villa_resort/',zion_villa_resort_details,name='zion_villa_resort_details'),

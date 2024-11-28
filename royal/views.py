@@ -136,6 +136,9 @@ def varkala_villa_details(request):
 def pura_vida_details(request):
     return render(request, "pura_vida.html")
 
+def mumulu_inn(request):
+    return render(request, "mumulu.html")
+
 # voucher cretions views 
 
 

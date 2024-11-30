@@ -1457,6 +1457,47 @@ ana
   background: url(../image/property_img/mumulu_in_outside2.jpg) no-repeat scroll center bottom/cover;
 }
 /* end-mumulu_inn */
+
+/* kudos */
+.blog_banner_kudos {
+  min-height: 780px;
+  overflow: hidden;
+}
+
+
+.blog_banner_kudos .banner_content {
+  margin-bottom: 0px;
+  margin-top: 106px;
+}
+
+.blog_banner_kudos .banner_content h4 {
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog_banner_kudos .banner_content p {
+  font-size: 16px;
+  padding: 0px;
+  margin-bottom: 35px;
+}
+
+.f_48 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.blog_banner_two {
+  padding: 187px 0px 104px;
+}
+
+.blog_banner_kudos .bg-parallax{
+  background: url(../image/property_img/kudos_main2.jpg) no-repeat scroll center bottom/cover;
+}
+/* end-kudos */
 /*=============End Blog Banner css =============*/
 
 

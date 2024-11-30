@@ -139,6 +139,10 @@ def pura_vida_details(request):
 def mumulu_inn(request):
     return render(request, "mumulu.html")
 
+def kudos(request):
+    return render(request, "kudos.html")
+
+
 # voucher cretions views 
 
 
